@@ -1,4 +1,4 @@
-const VERSION = '2026-10-20T02:28:11Z';
+const VERSION = '2026-10-20T14:30:16Z';
 const CACHE = 'x-consensus-' + VERSION;
 const SHELL = ['./', './manifest.webmanifest', './icon-192.png', './icon-512.png', './apple-touch-icon.png'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL)).then(() => self.skipWaiting())); });
